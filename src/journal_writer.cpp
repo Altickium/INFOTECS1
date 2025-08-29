@@ -1,4 +1,5 @@
-#include "logger.h"
+#include "journal_writer.h"
+
 #include <fstream>
 #include <sstream>
 #include <iomanip>

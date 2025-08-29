@@ -3,8 +3,8 @@ project(infotecs-test-task)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(main-logger SHARED src/logger.cpp)
-target_include_directories(main-logger PUBLIC include)
+add_library(journal-writer-lib SHARED src/journal_writer.cpp)
+target_include_directories(journal-writer-lib PUBLIC include)
 
 add_executable(main-app src/main.cpp)
-target_link_libraries(main-app main-logger)
+target_link_libraries(main-app journal-writer-lib)

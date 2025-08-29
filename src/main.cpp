@@ -1,4 +1,4 @@
-#include "logger.h"
+#include "journal_writer.h"
 
 #include <iostream>
 #include <queue>
